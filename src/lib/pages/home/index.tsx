@@ -1,17 +1,11 @@
-import { Grid } from "@chakra-ui/react";
+import type React from "react";
 
-import CTASection from "./components/CTASection";
-import SomeImage from "./components/SomeImage";
 import SomeText from "./components/SomeText";
 
-const Home = () => {
-  return (
-    <Grid gap={4}>
-      <SomeText />
-      <SomeImage />
-      <CTASection />
-    </Grid>
-  );
+interface HomeComponentProps {}
+
+const Home: React.FC<HomeComponentProps> = () => {
+  return <SomeText />;
 };
 
 export default Home;

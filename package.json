@@ -1,8 +1,8 @@
 {
-  "name": "vite-react-chakra-starter",
+  "name": "medsecure",
   "version": "0.1.0",
   "private": true,
-  "author": "sozonome",
+  "author": "debuggar",
   "scripts": {
     "dev": "vite",
     "build": "pnpm type-check && vite build",

@@ -5,13 +5,17 @@ import Layout from "~/lib/layout";
 import Routings from "~/lib/router/Routings";
 import { theme } from "~/lib/styles/theme";
 
+import { DrawerProvider } from "./lib/contexts/SignupDrawerContext";
+
 const App = () => (
   <ChakraProvider theme={theme}>
-    <Router>
-      <Layout>
-        <Routings />
-      </Layout>
-    </Router>
+    <DrawerProvider>
+      <Router>
+        <Layout>
+          <Routings />
+        </Layout>
+      </Router>
+    </DrawerProvider>
   </ChakraProvider>
 );
 
