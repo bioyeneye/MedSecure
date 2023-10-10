@@ -1,4 +1,6 @@
 export const routeUrls = {
   home: "/",
-  organizationRegister: "/organization-register",
+  organizationRegister: "/register/organization",
+  riderRegister: "/register/rider",
+  login: "/login",
 };

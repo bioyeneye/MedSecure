@@ -31,7 +31,7 @@ const SomeText: React.FC<HomeContentComponentProps> = () => {
   const headingAnimationHolder = `${animation} 2s linear infinite`;
 
   const navigate = useNavigate();
-  const handleBackToHome = () => navigate(routeUrls.organizationRegister);
+  const handleBackToHome = (url: string) => navigate(url);
 
   return (
     <Flex
@@ -73,7 +73,7 @@ const SomeText: React.FC<HomeContentComponentProps> = () => {
               size="lg"
               fontWeight="bold"
               rounded="3xl"
-              onClick={handleBackToHome}
+              onClick={() => handleBackToHome(routeUrls.organizationRegister)}
             >
               Get started as a Company
             </Button>
@@ -86,7 +86,7 @@ const SomeText: React.FC<HomeContentComponentProps> = () => {
               size="lg"
               fontWeight="bold"
               rounded="3xl"
-              onClick={handleBackToHome}
+              onClick={() => handleBackToHome(routeUrls.riderRegister)}
               ml="8"
             >
               Get started as a Driver
